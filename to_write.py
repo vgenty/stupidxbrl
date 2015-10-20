@@ -8,7 +8,7 @@ for i in soup.find_all(class_='xbrlviewer'):
         print i.text,i.attrs['href']
 
 
-#Then maybe connect to sec.gov or FTP
+#Then maybe connect to sec.gov or FTP scrapping web easier -.-
 page2 = urllib2.urlopen("https://www.sec.gov/Archives/edgar/data/51143/000104746915001106/R2.htm")
 soup2 = BeautifulSoup(page2,"lxml")
 
